@@ -1,66 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link href="styles.css" rel="stylesheet" type="text/css"/>
-        
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+
 </head>
+
 <body>
-<!--  dane do logowania-->
-   <form action="mailto:wronowski.d@gmail.com" method="post" enctype="text/plain">
-    <div>
-     <p>imię</p>
-      <input name="imię" placeholder="Imię">
-      
-     <P>nazwisko</P>
-      <input name="nazwisko" placeholder="Nazwisko"> 
-      
-    <label>email</label>
-      <input name="e-mail" placeholder="e-mail">
-  
-      
-        
-       <P>Miasto</P>
-        
-         <select name="nazwa">
+    <!--  dane do logowania-->
+    <form action="mailto:wronowski.d@gmail.com" method="post" enctype="text/plain">
+        <div>
+            <p>imię</p>
+            <input name="imię" placeholder="Imię">
+
+            <P>nazwisko</P>
+            <input name="nazwisko" placeholder="Nazwisko">
+
+            <P>email</P>
+            <input name="e-mail" placeholder="e-mail">
+
+            <p> <label>
+             Miasto
+            
+        <select name="nazwa">
 		<option>Kraków</option>
 		<option>Warszawa</option>
 		<option>Gdańsk</option>
-        <option>Parzymiechy</option>				
+        <option>Parzymiechy</option>			
+        
 	</select>
-      
-        <p>płeć</p>
+       
+       </label></p>
+
+
+
+            <p> <label>
+            płeć
+          
       
       <select name="płeć">
 		<option>łon</option>
 		<option>łona</option>
 		<option>łono</option>
         <option>ale jak?</option>				
-	</select>
-     
-      <P> numer telefonu</P>
-      <input name="numer telefonu" placeholder="numer telefonu">
-      
-    <p>Zgoda na przetwarzanie danych osobowych</p>
-<input type="checkbox" name="Tak" value="Tak" />Tak<br/>
-<input type="checkbox" name="Nie" value="Nie" />Nie <br/>  
-<p>Podaj swój komentarz:</p>
-<textarea name="Komentarz" cols="50" rows="20">Proszę, wpisz tutaj jakiś komentarz...</textarea>
-<br /><br /><br />
-<!-- Przycisk WYŚLIJ -->
-<input type="submit" value="Wyślij formularz" />
-<!-- Przycisk WYCZYŚĆ DANE -->
-<input type="reset" value="Wyczyść dane" />
-</div>
- 
- 
-  
- </form>
-  
-<!-- koniec -->
- 
+	</select>           
+       </label> </p>
 
-  
+
+
+
+            <P> numer telefonu</P>
+            <input name="numer telefonu" placeholder="numer telefonu">
+
+            <p>Zgoda na przetwarzanie danych osobowych</p>
+            <input type="checkbox" name="Tak" value="Tak" />Tak<br/>
+            <input type="checkbox" name="Nie" value="Nie" />Nie <br/>
+            <p>Podaj swój komentarz:</p>
+            <textarea name="Komentarz" cols="50" rows="20">Proszę, wpisz tutaj jakiś komentarz...</textarea>
+            <br /><br /><br />
+            <!-- Przycisk WYŚLIJ -->
+            <input type="submit" value="Wyślij formularz" />
+            <!-- Przycisk WYCZYŚĆ DANE -->
+            <input type="reset" value="Wyczyść dane" />
+        </div>
+
+
+
+    </form>
+
+    <!-- koniec -->
+
+
+
 </body>
-</html> 
+
+</html>
