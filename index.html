@@ -4,82 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link href="styles.css" rel="stylesheet" type="text/css" />
-
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <!--  dane do logowania-->
-    <form action="mailto:wronowski.d@gmail.com" method="post" enctype="text/plain">
-        <div>
-            <label><p>imię</p>
-            <input name="imię" placeholder="Imię"> </label>
+    <form action="https://formspree.io/" method="POST">
+        <label for="name">Imię:</label>
+        <input type="text" name="name" id="name">
 
-            <label><P>nazwisko</P>
-            <input name="nazwisko" placeholder="Nazwisko">
-                
-            </label>
+        <br>
+        <label for="lastname">Nazwisko:</label>
+        <input type="text" name="lastname" id="lastname">
 
-            <label>
-               <P>email</P>
-            <input name="e-mail" placeholder="e-mail">
-            
-            </label>
+        <br>
+        <label for="mail">E-mail:</label>
+        <input type="email" name="_replyto" id="mail">
 
+        <br>
+        <label for="phone">Telefon:</label>
+        <input type="tel" name="phone" id="phone">
 
+        <br>
+        <label for="city">Wybierz miasto:</label>
+        <select name="city" id="city">
+      <option value="krakow">Kraków</option>
+      <option value="warszawa">Warszawa</option>
+      <option value="gdansk">Gdańsk</option>
+    </select>
 
+        <br>
+        <label>Wybierz płeć:</label>
+        <input type="radio" name="gender" value="male" id="male" checked> <label for="male">Mężczyzna</label>
+        <br>
 
-            <p> <label>
-             Miasto
-            
-        <select name="nazwa">
-		<option>Kraków</option>
-		<option>Warszawa</option>
-		<option>Gdańsk</option>
-        <option>Parzymiechy</option>			
-        
-	</select>
-       
-       </label></p>
+        <input type="radio" name="gender" value="female" id="female"> <label for="female">Kobieta</label>
 
+        <label for="message">Wiadomość: </label>
+        <textarea name="message" cols="30" rows="20" maxlength="200" id="message"></textarea>
+        <br>
 
-
-            <p> <label>
-            płec
-          
-      
-      <select name="płec">
-		<option>łon</option>
-		<option>łona</option>
-		<option>ale jak?</option>
-						
-	</select>           
-       </label> </p>
-
-
-
-            <P> numer telefonu</P>
-            <input name="numer telefonu" placeholder="numer telefonu">
-
-            <p>Zgoda na przetwarzanie danych osobowych</p>
-            <input type="checkbox" name="Tak" value="Tak" />Tak<br/>
-            <input type="checkbox" name="Nie" value="Nie" />Nie <br/>
-            <p>Podaj swój komentarz:</p>
-            <textarea name="Komentarz" cols="50" rows="20">Proszę, wpisz tutaj jakiś komentarz...</textarea>
-            <br /><br /><br />
-            <!-- Przycisk WYŚLIJ -->
-            <input type="submit" value="Wyślij formularz" />
-            <!-- Przycisk WYCZYŚĆ DANE -->
-            <input type="reset" value="Wyczyść dane" />
-        </div>
-
-
-
+        <input type="checkbox" id="agreement" name="agreement">
+        <label for="agreement">Wyrażam zgodę na przetwarzanie danych osobowych</label>
+        <br>
+        <input type="submit" value="Send">
     </form>
-
-    <!-- koniec -->
-
-
 </body>
 
 </html>
